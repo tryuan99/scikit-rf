@@ -80,7 +80,7 @@ class Touchstone:
 
         From a io.StringIO object
 
-        >>> link = 'https://raw.githubusercontent.com/scikit-rf/scikit-rf/master/examples/basic_touchstone_plotting/horn antenna.s1p'
+        >>> link = 'https://raw.githubusercontent.com/scikit-rf/scikit-rf/master/examples/basic_touchstone_plotting/horn_antenna.s1p'
         >>> r = requests.get(link)
         >>> stringio = io.StringIO(r.text)
         >>> stringio.name = 'horn.s1p'  # must be provided for the Touchstone parser

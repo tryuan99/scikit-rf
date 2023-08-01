@@ -31,7 +31,7 @@ class Analyzer(base_analyzer.Analyzer):
         return self.get_snp_network(port)
 
     def get_snp_network(self, ports, **kwargs):
-        ntwk = skrf.Network(os.path.join(example_data_dir, 'ring slot array simulation.s2p'))
+        ntwk = skrf.Network(os.path.join(example_data_dir, 'ring_slot_array_simulation.s2p'))
         if type(ports) == int:
             ports = [ports]
 
@@ -74,7 +74,7 @@ class Analyzer(base_analyzer.Analyzer):
         name_prefix = kwargs.get('name_prefix', "")
         if name_prefix:
             name_prefix += " - "
-        ntwk = skrf.Network(os.path.join(example_data_dir, 'ring slot array simulation.s2p'))
+        ntwk = skrf.Network(os.path.join(example_data_dir, 'ring_slot_array_simulation.s2p'))
         if not traces:
             return
 

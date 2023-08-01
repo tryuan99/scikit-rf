@@ -42,11 +42,11 @@ short_2p = Network(os.path.join(pwd, 'short.s2p'))
 """ Measured 1 nH series inductor (with parasitics) """
 ind = Network(os.path.join(pwd, 'ind.s2p'))
 """ 2-Port Network: 'line',  75.0-110.0 GHz, 201 pts, z0=[50.+0.j 50.+0.j]"""
-ring_slot = Network(os.path.join(pwd, 'ring slot.s2p'))
+ring_slot = Network(os.path.join(pwd, 'ring_slot.s2p'))
 """ 2-Port Network: 'ring slot',  75.0-110.0 GHz, 201 pts, z0=[50.+0.j 50.+0.j] """
 tee = Network(os.path.join(pwd, 'tee.s3p'))
 """ 3-Port Network: 'tee',  330.0-500.0 GHz, 201 pts, z0=[50.+0.j 50.+0.j 50.+0.j] """
-ring_slot_meas = Network(os.path.join(pwd, 'ring slot measured.s1p'))
+ring_slot_meas = Network(os.path.join(pwd, 'ring_slot_measured.s1p'))
 """  1-Port Network: 'ring slot measured',  75.0-109.999999992 GHz, 101 pts, z0=[50.+0.j] """
 wr2p2_line = Network(os.path.join(pwd, 'wr2p2,line.s2p'))
 wr2p2_line1 = Network(os.path.join(pwd, 'wr2p2,line1.s2p'))
